@@ -82,6 +82,7 @@ int main()
     ll x,y;
     cin>>x>>y;
     vector<int> w,r;
+    w.push_back(x);
     while(true){
         w.push_back(h[x]);
         x=h[x];
@@ -90,6 +91,7 @@ int main()
         }
     }
     //cout<<endl;
+    r.push_back(y);
     while(true){
         r.push_back(h[y]);
         y=h[y];
@@ -100,6 +102,7 @@ int main()
     // for(auto val : w){
     //     cout<<val<<" ";
     // }
+    // cout<<endl;
     // for(auto val : r){
     //     cout<<val<<" ";
     // }
